@@ -48,6 +48,7 @@ body {
     display: flex; 
     justify-content: space-between; 
     align-items: center; 
+    text-align: center; 
     z-index: 2;
 }
 
@@ -76,12 +77,16 @@ body {
     list-style-type: none;
     justify-content: center; 
     align-items: center; 
-    margin-left: 20px; 
+}
+
+.nav-li,.nav-ul {
+    margin: 0; 
+    padding: 0; 
 }
 
 .nav-link {
     text-decoration: none;
-    font-size: 15px;
+    font-size: 18px;
     padding-right: 30px;
     color: var(--main-white);
     font-weight: 600;
@@ -245,7 +250,7 @@ section{
 
 #resources-section, #projects-section{
     height: auto; 
-    padding: 30px; 
+    padding: 30px 30px 0; 
 }
 
 .list-container {
@@ -299,16 +304,20 @@ section{
     padding-bottom: 20px; 
 }
 
-ul {
-    padding-left: 20px; 
-    padding-bottom: 20px; 
+.requirements-ul {
+    padding-left: 20px;
+    padding-bottom: 20px;  
+}
+
+#projects-section {
+    background-image: linear-gradient(65deg, var(--main-dark), var(--main-blue));
+    padding-bottom: 50px; 
 }
 
 .iframe-container{
     height: 315px; 
     width: 560px; 
-    border: 10px solid var(--main-dark); 
-    box-shadow: 0 10px 10px 5px var(--shadow-blue);
+    border: 10px solid var(--main-blue); 
 }
 
 @media only screen and (max-width: 900px) {
