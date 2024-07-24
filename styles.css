@@ -2,11 +2,13 @@
 
 :root {
     --main-blue: #2a236e;
+    --shadow-blue: #1b135d;
     --main-gray: #2a2934;
     --main-dark: #0E0B33; 
     --main-white: #fceded;
     --secondary-blue: #1b8bbb;
     --highlight-yellow: #FEE169; 
+    --shadow-yellow: #f3cd37;
 }
 
 @keyframes pulse {
@@ -70,7 +72,7 @@ body {
     height: 60%;  
 }
 
-ul {
+.nav-ul {
     display: flex;
     float: right;
     list-style-type: none;
@@ -192,17 +194,23 @@ section{
     padding: 30px;
 }
 
-.prize-category-title, .resources-title{
+.prize-category-title, .resources-title, .video-title{
     color: var(--highlight-yellow); 
     margin-top: 10px; 
     font-size: 30px; 
 }
 
-.sponsor-logo-link, .sponsor-logo-card {
-    width: 300px; 
+.sponsor-logo-card:hover {
+    opacity: .8;
 }
 
-.sponsor-prize-category-description, .resources-description{
+.sponsor-logo-link, .sponsor-logo-card {
+    width: 300px;
+    box-shadow: 0 2px 20px 0px var(--shadow-blue);
+    transition: opacity .5s ease-in-out;
+}
+
+.sponsor-prize-category-description, .resources-description, .video-description{
     margin-top: 10px; 
     color: var(--main-white); 
     width: 70vw; 
@@ -217,9 +225,15 @@ section{
     height: auto;
 }
 
+.prize-image:hover {
+    opacity: .8;
+}
+
 .prize-image{
     width: 300px;
-    border-radius: 30px; 
+    border-radius: 30px;
+    box-shadow: 0 2px 20px 0px var(--shadow-yellow);
+        transition: opacity .5s ease-in-out;
 }
 
 .prize-name{
@@ -234,7 +248,7 @@ section{
     color: var(--main-gray); 
 }
 
-#resources-section {
+#resources-section, #projects-section{
     height: auto; 
     padding: 30px; 
 }
@@ -288,6 +302,18 @@ section{
 .resource-description {
     width: 60vw; 
     padding-bottom: 20px; 
+}
+
+ul {
+    padding-left: 20px; 
+    padding-bottom: 20px; 
+}
+
+.iframe-container{
+    height: 315px; 
+    width: 560px; 
+    border: 10px solid var(--main-dark); 
+    box-shadow: 0 10px 10px 5px var(--shadow-blue);
 }
 
 @media only screen and (max-width: 900px) {
