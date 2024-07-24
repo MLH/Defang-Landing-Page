@@ -36,8 +36,6 @@ html {
 
 body {
     font-family: arial;
-    width: 100vw; 
-    background-color: var(--main-dark); 
 }
 
 #navbar {
@@ -97,7 +95,7 @@ a:hover {
 #welcome-section {
     margin-top: 75px; 
     height: 60vh;
-    width: 100%;
+    width: auto;
 }    
 
 .hero-container{
@@ -106,13 +104,11 @@ a:hover {
     background-repeat: no-repeat; 
     background-position: center; 
     background-size: cover; 
-    position: absolute; 
     display: flex;
-    margin: 0 auto;
     position: relative;
     z-index: 0;
     height: 60vh; 
-    width: 100vw; 
+    width: auto; 
     min-height: 410px; 
 }
 
@@ -184,13 +180,12 @@ button:hover{
 
 section{
     height: auto; 
-    width: 100vw; 
     background-color: var(--main-blue); 
     color: var(--main-white); 
 }
 
 .prize-category-container {
-    width: 100vw; 
+    width: auto; 
     padding: 30px;
 }
 
@@ -206,7 +201,6 @@ section{
 
 .sponsor-logo-link, .sponsor-logo-card {
     width: 300px;
-    box-shadow: 0 2px 20px 0px var(--shadow-blue);
     transition: opacity .5s ease-in-out;
 }
 
@@ -218,9 +212,10 @@ section{
 }
 
 .prize-container{
+    background-image: linear-gradient(65deg, var(--highlight-yellow), var(--shadow-yellow));
     background-color: var(--highlight-yellow); 
     color: var(--main-dark);
-    width: 100vw; 
+    width: auto; 
     padding: 30px; 
     height: auto;
 }
