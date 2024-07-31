@@ -127,6 +127,10 @@ a:hover {
     z-index: 1;
 }
 
+.hero-sponsor{
+    color: var(--highlight-yellow); 
+}
+
 .header-square {
     height: 300px;
     width: 300px;
