@@ -195,17 +195,10 @@ section{
 }
 
 .how-it-works {
-    margin: 80px 0;
-    padding: 40px;
+    margin: 40px 0;
     background-color: var(--card-bg-color, #111);
     border-radius: 12px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-
-.how-it-works {
     max-width: 800px;
-    margin: 40px auto;
     padding: 20px;
     background-color: #f8f9fa;
     border-radius: 8px;
@@ -371,7 +364,7 @@ section{
 
 .requirements-ul {
     padding-left: 20px;
-    padding-bottom: 20px;  
+    padding-bottom: 20px; 
 }
 
 #projects-section {
@@ -398,12 +391,14 @@ section{
             width: 250px;
             right: 195px;
         }
-    
-
+        .how-it-works {
+            max-width: 600px;
+        }
 }
 
 @media only screen and (max-width: 800px) {
-    .hero-graphic, .header-square {
+    .hero-graphic, .header-square{
         display: none; 
     }
+
 }
